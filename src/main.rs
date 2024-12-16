@@ -20,7 +20,7 @@ fn main() -> eframe::Result {
     eframe::run_native(
         "requestie",
         native_options,
-        Box::new(|cc| Ok(Box::new(requestie::TemplateApp::new(cc)))),
+        Box::new(|cc| Ok(Box::new(requestie::RequestieApp::new(cc)))),
     )
 }
 

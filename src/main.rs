@@ -50,7 +50,7 @@ fn main() {
             .start(
                 canvas,
                 web_options,
-                Box::new(|cc| Ok(Box::new(requestie::TemplateApp::new(cc)))),
+                Box::new(|cc| Ok(Box::new(requestie::RequestieApp::new(cc)))),
             )
             .await;
 
